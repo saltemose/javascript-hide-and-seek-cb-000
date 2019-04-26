@@ -13,6 +13,9 @@ function deepestChild(){
 
   while (!found){
     children = children.querySelector('div')
-    return children[-1]
+    if(children.querySelector('div')===null){
+      break
+    }
+    return children;
   }
 }
